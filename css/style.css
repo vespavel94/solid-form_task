@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ccdcdc;
+    padding-top: 80px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+input{ 
+    outline: none;
+    box-sizing: border-box;
+    height: 42px;
+}
+
+input.is-invalid{
+    border: 1px solid red !important;
+}
+
+label div.error{
+    color: red;
+    position: absolute;
+    bottom: -19px;
+    right: 0;
+}
+
+.popup-error{
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 99;
+}
+
+.popup-error__body{
+    width: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    padding: 40px;
+    text-align: center;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+    border-radius: 20px;
+}
+
+.popup-error__body p{
+    margin-bottom: 30px;
+}
+
+.popup-error__body button{
+    display: inline-block;
+    outline: none;
+    color: #09848d;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    border-radius: .25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .875rem;
+    position: relative;
+    border-width: 2px;
+    border-color: #09848d;
+}
