@@ -7,7 +7,8 @@ const VueInputMask = require('vue-inputmask').default
 Vue.use(Vuelidate)
 Vue.use(VueInputMask)
 
+Vue.config.productionTip = false
+
 new Vue({
-  el: '#app',
   render: h => h(App)
-})
+}).$mount('#app')
